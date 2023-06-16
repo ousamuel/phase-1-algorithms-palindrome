@@ -1,9 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  const arr = word.split("");
+  // console.log(arr);
+  for (let i = 0; i <= arr.length/2 - 1; i++){
+    if(arr[i] !== arr[arr.length - 1 - i]){
+      return false;
+    }
+  }
+  return true;
 
-/* 
+
+}
+  /* 
   Add your pseudocode here
+  split word into array,
+  compare from front to back
 */
 
 /*
